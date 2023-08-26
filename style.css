@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=REM:wght@300&family=Roboto&family=Roboto+Mono:wght@500&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Poppins',sans-serif;
+    background-color: #2b352c;
+}
+
+:root{
+    --primary-color : white;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.section1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.starImg{
+    object-fit: cover;
+    /* position: absolute; */
+    animation: star 15s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes star{
+    0%{
+        transform: scale(1);
+    }
+
+    25%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+
+}
+
+.wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap img{
+    width: 100%;
+    height: 100%;
+}
+.content1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.nav{
+    height: 10vh;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(192, 192, 192, 0.367); */
+    
+}
+
+.nav a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.banner{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.gameName{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gameName img{
+    height: 125px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.gameBird{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    align-items:center;
+}
+
+.logo{
+    position: absolute;
+    height: 200px;
+}
+
+/* .flyingBird{
+    height: 200px;
+    position: absolute;
+    z-index: 5;
+} */
+
+.play{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    padding: 10px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .8s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #2b352c;
+    transition: .8s;
+}
+
+
+
+/* section 2 */
+
+.section2{
+    height: 100vh;
+    width: 100%;
+}
+
+.wrap2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.pillarWrap{
+    position: relative; 
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.ground1{
+    height: 10%;
+    width: 100%;
+}
+.ground1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.ground2{
+    height: 10%;
+    width: 100%;
+}
+
+.ground2 img{
+    height: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+
+.pillar{
+    height: 100%;
+    width: 100%;
+}
+
+.pillar11{
+    position: absolute;
+    left: 3%;
+    top: 0%;
+    transform: rotate(180deg);
+    height: 350px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.pillar12{
+    position: absolute;
+    height: 350px;
+    left: -9%;
+    top: 75%;
+}
+
+.pillar21{
+    position: absolute;
+    left: 25%;
+    top: -20%;
+    transform: rotate(180deg);
+    height: 350px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.pillar22{
+    position: absolute;
+    height: 350px;
+    left: 13%;
+    top: 65%;
+}
+
+.pillar31{
+    position: absolute;
+    left: 50%;
+    top: -24%;
+    transform: rotate(180deg);
+    height: 350px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.pillar32{
+    position: absolute;
+    height: 350px;
+    left: 38%;
+    top: 55%;
+}
+
+.pillar41{
+    position: absolute;
+    left: 80%;
+    top: -24%;
+    transform: rotate(180deg);
+    height: 350px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.pillar42{
+    position: absolute;
+    height: 350px;
+    left: 68%;
+    top: 55%;
+}
+
+.flyingBird{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* transform: translateY(-60px);
+    transform: translateX(300px); */
+    transform: translate(-100px,200px);
+    /* animation: flyingBird 8s linear infinite; */
+}
+
+.flyingBird img{
+    height: 150px;
+}
+
+@keyframes flyingBird {
+    0%{
+        left: -8%;
+        top: 55%;
+    }
+    20%{
+        left: 3%;
+        top: 55%;
+    }
+    30%{
+        left: 15%;
+        top: 60%;
+    }
+    40%{
+        top: 40%;
+        left: 24%;
+    }
+    60%{
+        top: 33%;
+        left: 49%;
+    }
+    80%{
+        top: 35%;
+        left: 79%;
+    }
+    100%
+    {
+        top: 30%;
+        left: 105%;
+    }
+}
+
+
+/* section 3 */
+
+.section3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.sec3Container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.description{
+    width: 42%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.description p{
+    text-align: justify;
+}
+.descriptionHead{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.descriptionHead h1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+/* .details{
+    line-height: 2;
+
+}
+.details p{
+    height: 50%;
+    width: 100%;
+} */
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    transition: 1s;
+}
+
+.phone:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.phoneImg{
+    height: 500px;
+    position: absolute;
+}
+
+.clip{
+    height: 450px;
+}
+
+.wrap3{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* footer */
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot{
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.left a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playstore{
+    height: 100px;
+}
+/* swiper */
+.swiperOut{
+    display: none;
+}
+.section4{
+    position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      
+}
+.swiper {
+    width: 260px;
+    height: 450px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
